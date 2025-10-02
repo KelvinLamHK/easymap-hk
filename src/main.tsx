@@ -17,7 +17,7 @@ if (!existingFavicon) {
 
 // Derive brand color palette from logo at runtime (simple average approach)
 function extractAverageColorFromImage(src: string): Promise<{ r: number; g: number; b: number }> {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const image = new Image()
     image.crossOrigin = 'anonymous'
     image.onload = () => {
