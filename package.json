@@ -4,6 +4,10 @@
   "version": "0.0.0",
   "homepage": "https://KelvinLamHK.github.io/easymap-hk",
   "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -11,7 +15,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check-node": "node -e \"const required = '20.0.0'; const current = process.version.slice(1); const semver = require('semver'); if (!semver.gte(current, required)) { console.error('❌ Node.js version ' + required + ' or higher required. Current: ' + current); process.exit(1); } else { console.log('✅ Node.js version check passed: ' + current); }\""
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

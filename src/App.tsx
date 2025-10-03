@@ -152,15 +152,15 @@ function App() {
                                 </h2>
                             </div>
                             
-							<h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 text-balance leading-tight">
+							<h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-slate-900 text-balance leading-tight text-center">
                                 <span className="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 bg-clip-text text-transparent">
                                     {t('common.heroTitle')}
                                 </span>
                             </h1>
-							<p className="mt-6 text-xl text-slate-600 leading-relaxed max-w-2xl">{t('common.heroSubtitle')}</p>
+							<p className="mt-6 text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto text-center">{t('common.heroSubtitle')}</p>
                             
 
-                            <div className="mt-10 flex flex-wrap justify-center gap-4 will-fade">
+                            <div className="mt-10 flex flex-wrap justify-center items-center gap-4 will-fade">
                                 <a className="group inline-flex items-center justify-center rounded-xl px-8 py-4 text-white font-semibold shadow-lg focus:outline-none focus:ring-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 focus:ring-blue-500 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5" href="#contact">
                                     {t('common.ctaContact')}
                                     <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
